@@ -8,7 +8,7 @@ function binarySearch (number, list){
         mid = Math.floor(mid); 
 
         if (list[mid] == number){
-            return list[mid];
+            return list[mid] + " with index " + mid;
         }
         
         if (list[mid] > number){
@@ -37,4 +37,4 @@ function newArray () {
 }
 
 //console.log(newArray())
-console.log("Number is" + " " + binarySearch(11, [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,23,24,26,27,28,34.36,38,39,45,46,49,52,54,68,66,67,69,73,75,79,84,87,89,91,92,93,94,95,96,97,98,99,100]));
+console.log("Number is" + " " + binarySearch(54, [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,23,24,26,27,28,34.36,38,39,45,46,49,52,54,68,66,67,69,73,75,79,84,87,89,91,92,93,94,95,96,97,98,99,100]));
