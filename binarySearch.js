@@ -22,4 +22,19 @@ function binarySearch (number, list){
     return "not in the list";
 
 }
-console.log("Number" + " " + binarySearch(4, [1,2,3,4,5,6,7,8,9,10]));
+
+function newArray () {
+    let arr = [0];
+    for (i = 1; i < 100; i++){
+        let n = Math.random() * 100;
+        n = Math.round(n);
+        //if (arr[i-1] <= n){
+            arr.push(n);
+        //}
+    }
+
+    return arr;
+}
+
+//console.log(newArray())
+console.log("Number is" + " " + binarySearch(11, [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,23,24,26,27,28,34.36,38,39,45,46,49,52,54,68,66,67,69,73,75,79,84,87,89,91,92,93,94,95,96,97,98,99,100]));
